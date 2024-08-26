@@ -1,0 +1,154 @@
+/* .player {
+    width: 8%;
+    aspect-ratio: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.player__number {
+    width: 60%;
+    aspect-ratio: 1;
+    background-color: blue;
+    border-radius: 50%;
+    white-space: nowrap;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    align-self: center;
+}
+
+.player__number span {
+    color: white;
+    font-size: 1vw;
+}
+
+.player__name {
+    height: 40%;
+    aspect-ratio: 1;
+}
+
+.player__name p {
+    white-space: nowrap;
+    font-size: 1vw;
+} */
+
+.player {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.player__right {
+    flex-direction: row;
+}
+
+.player__bottom {
+    flex-direction: column;
+}
+
+.player__number {
+    aspect-ratio: 1;
+    background-color: blue;
+    border-radius: 50%;
+    white-space: nowrap;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    align-self: center;
+    width: 2ch;
+    font-size: 1vw;
+    padding: 1.2vw;
+}
+
+.player__number span {
+    color: white;
+}
+
+.player__yellow_card {
+    width: 1.15ch;
+    aspect-ratio: 0.75;
+    background-color: #FFD700;
+    z-index: 2;
+    position: absolute;
+    transform: rotate(15deg);
+    border-radius: 0.25ch;
+}
+
+.player__red_card {
+    width: 1.15ch;
+    aspect-ratio: 0.75;
+    background-color: #FF0000;
+    z-index: 2;
+    position: absolute;
+    transform: rotate(15deg);
+    border-radius: 0.25ch;
+}
+
+.player__subbed {
+    width: 2ch;
+    background-color: whitesmoke;
+    z-index: 2;
+    position: absolute;
+    margin-top: 3.5ch;
+    margin-left: 2.7ch;
+    border-radius: 50%;
+    aspect-ratio: 1;
+    display: flex;
+    flex-direction: row;
+}
+
+.player__subbed_in {
+    fill: red;
+    stroke: red;
+    stroke-width: 0.5ch;
+}
+
+.player__subbed_out {
+    fill: green;
+    stroke: green;
+    stroke-width: 0.5ch;
+    transform: rotate(180deg);
+}
+
+.player__soccer_ball {
+    width: 2.2ch;
+    z-index: 2;
+    position: absolute;
+    margin-bottom: 3.5ch;
+    margin-right: 3ch;
+    background-color: white;
+    height: 2.2ch;
+    border-radius: 50%;
+}
+
+.player__goal {
+    width: 2.6ch;
+    background-color: whitesmoke;
+    position: absolute;
+    margin-bottom: 3ch;
+    margin-right: 6.5ch;
+    color: black;
+    border-radius: 50%;
+    aspect-ratio: 1;
+    z-index: 2;
+    font-size: 0.8vw;
+}
+
+.player__name {
+    font-size: 1vw;
+}
+
+.player__name__right {
+    margin-left: 0.5vw;
+}
+
+.player__name p {
+    white-space: nowrap;
+}

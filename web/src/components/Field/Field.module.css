@@ -1,0 +1,88 @@
+.field {
+    height: 100vh;
+    width: calc(100vh * 0.68);
+    background-color: #6cbb3c;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+}
+
+.halfline {
+    grid-row: 1 / span 2;
+    grid-column: 1 / span 2;
+    align-self: center;
+    height: calc(100vh / 333.333);
+    width: 100%;
+    background-color: white;
+}
+
+.ballpoint {
+    grid-row: 1 / span 2;
+    grid-column: 1 / span 2;
+    justify-self: center;
+    align-self: center;
+    width: calc(100vh * 0.01);
+    height: calc(100vh * 0.01);
+    border-radius: 50%;
+    background-color: white;
+}
+
+.centercircle {
+    grid-row: 1 / span 2;
+    grid-column: 1 / span 2;
+    justify-self: center;
+    align-self: center;
+    width: calc(100vh * 0.08696);
+    height: calc(100vh * 0.08696);
+    border: calc(100vh / 333.333) solid white;
+    border-radius: 50%;
+}
+
+.goalbox {
+    height: calc(100vh * 0.052);
+    width: calc(100vh * 0.68 * 0.270);
+    border-bottom: calc(100vh / 333.333) solid white;
+    border-left: calc(100vh / 333.333) solid white;
+    border-right: calc(100vh / 333.333) solid white;
+    background-color: transparent;
+}
+
+.topbox {
+    grid-row: 1;
+    grid-column: 1 / span 2;
+    justify-self: center;
+}
+
+.bottombox {
+    grid-row: 2;
+    grid-column: 1 / span 2;
+    justify-self: center;
+    align-self: end;
+    transform: rotate(180deg);
+}
+
+.penaltybox {
+    height: calc(100vh * 0.157);
+    width: calc(100vh * 0.68 * 0.595);
+    border-bottom: calc(100vh / 333.333) solid white;
+    border-left: calc(100vh / 333.333) solid white;
+    border-right: calc(100vh / 333.333) solid white;
+    background-color: transparent;
+}
+
+/* .penaltybox {
+    width: 50%;
+    height: 27%;
+    border: 2px solid white;
+    background-color: transparent;
+}
+
+.topbox {
+    grid-row: 1;
+    justify-self: center;
+}
+
+.bottombox {
+    grid-row: 2;
+    justify-self: center;
+} */
