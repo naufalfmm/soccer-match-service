@@ -91,26 +91,33 @@ const MatchClub: FC<MatchClubProps> = ({
         )
     }
 
+    let formation = "";
+    for (const key in grouped_positions) {
+        formation = `${formation}-${grouped_positions[key]}`
+    }
+
+    formation = formation.substring(3)
+
     return (
-        <div key={`club-${id}`} className={styles.match__club}>
-            <div className={styles.match__club__properties}>
-                <img src={icon} alt={name} className={styles.match__club__properties__icon} />
-                <span className={styles.match__club__properties__name}>{name}</span>
-                <span className={styles.match__club__properties__coach}>{coach}</span>
-                <div className={styles.match__club__properties__score}>
+        <div key={`club-${id}`} className={styles.match_club}>
+            <div className={styles.match_club__properties}>
+                <img src={icon} alt={name} className={styles.match_club__properties__icon} />
+                <span className={styles.match_club__properties__name}>{name}</span>
+                <span className={styles.match_club__properties__coach}>{coach}</span>
+                <div className={styles.match_club__properties__score}>
                     <span>{score}</span>
                 </div>
             </div>
-            <div className={styles.match__club__fieldplayer}>
-                <div className={styles.match__club__fieldplayer__field}>
-                    <HalfField />
-                    <div className={styles.match__club__fieldplayer__starting}>
+            <div className={styles.match_club__fieldplayer}>
+                <div className={styles.match_club__fieldplayer__field}>
+                    <HalfField formation={formation} />
+                    <div className={styles.match_club__fieldplayer__starting}>
                         {player_elements}
                     </div>
                 </div>
                 {
                     sub_player_elements.length > 0 ? (
-                        <div className={styles.match__club__fieldplayer__sub}>
+                        <div className={styles.match_club__fieldplayer__sub}>
                             {sub_player_elements}
                         </div>
                     ): null

@@ -1,4 +1,4 @@
-.match__club {
+.match_club {
     display: flex;
     flex-direction: column;
     flex: 1;
@@ -6,7 +6,8 @@
     margin-left: 0.25rem;
 }
 
-.match__club__fieldplayer, .match__club__properties {
+.match_club__fieldplayer, 
+.match_club__properties {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -15,20 +16,20 @@
     border-bottom: 0.5px solid rgb(179, 179, 179);
 }
 
-.match__club__properties__icon {
+.match_club__properties__icon {
     width: 10vw;
 }
 
-.match__club__properties__name {
+.match_club__properties__name {
     font-size: 3.5vw;
     font-weight: bold;
 }
 
-.match__club__properties__coach {
+.match_club__properties__coach {
     font-size: 1.4vw
 }
 
-.match__club__properties__score {
+.match_club__properties__score {
     margin-top: 3vw;
     aspect-ratio: 1;
     background-color: rgb(216, 216, 216);
@@ -43,32 +44,32 @@
     font-size: 6.5vw;
 }
 
-.match__club__fieldplayer {
+.match_club__fieldplayer {
     width: 100%;
     position: relative;
 }
 
-.match__club__fieldplayer__field, 
-.match__club__fieldplayer__starting, 
-.match__club__fieldplayer__sub {
+.match_club__fieldplayer__field, 
+.match_club__fieldplayer__starting, 
+.match_club__fieldplayer__sub {
     width: 100%;
     padding-left: 2vw;
     padding-right: 2vw;
 }
 
-.match__club__fieldplayer__field {
+.match_club__fieldplayer__field {
     position: relative;
     height: auto;
 }
 
-.match__club__fieldplayer__starting {
+.match_club__fieldplayer__starting {
     height: 100%;
     position: absolute;
     top: 0;
     left: 0;
 }
 
-.match__club__fieldplayer__sub {
+.match_club__fieldplayer__sub {
     position: relative;
     margin-top: 1vh;
     display: flex;

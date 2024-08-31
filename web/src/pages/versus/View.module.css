@@ -1,0 +1,27 @@
+.versus_view {
+    width: 100%;
+    margin: 2vw;
+}
+
+.versus_view__properties {
+    font-size: 1.3vw;
+    text-align: left;
+    display: flex;
+    align-items: center;
+}
+
+.versus_view__properties__league_icon {
+    width: 2.3vw;
+    margin-right: 0.5vw;
+}
+
+.versus_view__clubs {
+    display: flex;
+    flex-direction: row;
+}
+
+.versus_view__stadion {
+    font-size: 1vw;
+    text-align: left;
+    margin-top: 0.8vw;
+}
