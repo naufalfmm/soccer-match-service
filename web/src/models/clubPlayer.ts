@@ -5,6 +5,7 @@ type ClubPlayer = {
     club_id: number;
     club_name: string;
     position: number;
+    is_captain: boolean;
     yellow_card_count?: number;
     red_card_count?: number;
     subbed_in_at?: number;

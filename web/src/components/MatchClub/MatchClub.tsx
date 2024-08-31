@@ -67,6 +67,7 @@ const MatchClub: FC<MatchClubProps> = ({
                 is_subbed_in={players[i].subbed_in_at !== undefined}
                 is_subbed_out={players[i].subbed_out_at !== undefined}
                 goal={players[i].goal}
+                is_captain={players[i].is_captain}
             />
         )
     }
@@ -80,11 +81,12 @@ const MatchClub: FC<MatchClubProps> = ({
                 shirt_number={sub_players[i].shirt_number}
                 shirt_name={sub_players[i].shirt_name}
                 name_position={PlayerShirtNamePosition.Right}
-                yellow_card_count={players[i].yellow_card_count}
-                red_card_count={players[i].red_card_count}
-                is_subbed_in={players[i].subbed_in_at !== undefined}
-                is_subbed_out={players[i].subbed_out_at !== undefined}
-                goal={players[i].goal}
+                yellow_card_count={sub_players[i].yellow_card_count}
+                red_card_count={sub_players[i].red_card_count}
+                is_subbed_in={sub_players[i].subbed_in_at !== undefined}
+                is_subbed_out={sub_players[i].subbed_out_at !== undefined}
+                goal={sub_players[i].goal}
+                is_captain={sub_players[i].is_captain}
             />
         )
     }

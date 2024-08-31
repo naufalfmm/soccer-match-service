@@ -18,6 +18,7 @@ interface PlayerProps {
     is_subbed_out?: boolean;
     is_subbed_in?: boolean;
     goal?: number;
+    is_captain: boolean;
 
     style?: CSSProperties;
     name_position?: PlayerShirtNamePosition
@@ -32,6 +33,7 @@ const Player: FC<PlayerProps> = ({
     is_subbed_out = false,
     is_subbed_in = false,
     goal = 0,
+    is_captain = false,
     style,
     name_position = PlayerShirtNamePosition.Bottom,
 }) => {
@@ -66,6 +68,7 @@ const Player: FC<PlayerProps> = ({
                 { subbed_status }
                 { goal !== undefined && goal > 0 ? <SoccerBall className={styles.player__soccer_ball} /> : null }
                 { goal !== undefined && goal > 0 ? (<div className={styles.player__goal}>{goal}</div>) : null }
+                { is_captain ? <div className={styles.player__captain}>C</div> : null }
             </div>
             <div className={[styles.player__name, name_position === PlayerShirtNamePosition.Right ? styles.player__name__right : null].join(" ")}>
                 <p>{shirt_name}</p>
